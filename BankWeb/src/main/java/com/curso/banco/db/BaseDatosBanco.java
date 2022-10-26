@@ -1,5 +1,6 @@
 package com.curso.banco.db;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -14,10 +15,10 @@ public class BaseDatosBanco {
 	// iniciar el static tablaProducto
 	static {
 		banco = new TreeMap<Integer,Customer>();
-		banco.put(1, new Customer("Alberto","Ramos"));
-		banco.put(2, new Customer("Begoña","Olea"));
-		banco.put(3, new Customer("Patxi","Etxeberria"));
-		banco.put(4, new Customer("Ana","Jimenez"));
+		banco.put(1, new Customer(1,"Alberto","Ramos"));
+		banco.put(2, new Customer(2,"Begoña","Olea"));
+		banco.put(3, new Customer(3,"Patxi","Etxeberria"));
+		banco.put(4, new Customer(4,"Ana","Jimenez"));
 		
 	}
 	private BaseDatosBanco() {}
@@ -25,11 +26,20 @@ public class BaseDatosBanco {
 		// id y solicitar todos
 		
 		
-		public static void add(String firstName, String lastName) {
+		/*public static void add(String firstName, String lastName) {
 			int newId = ++contador;
-			Customer newP = new Customer( firstName,lastName);
+			Customer newP = new Customer(newId ,firstName,lastName);
 			banco.put(newId, newP);
 		}
 	
-	
+	*/
+
+	public static Collection<Customer> getAll() {
+		
+		return banco.values();
+		
+		
+	}
+
+
 }

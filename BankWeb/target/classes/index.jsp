@@ -21,7 +21,7 @@
     
     
      
-   	<a class="btn btn-primary" href="lista-cliente.jsp" role="button">LISTA CLIENTES</a>
+   	<a class="btn btn-primary" href="ListaClientesServlet" role="button">LISTA CLIENTES</a>
    
     <a class="btn btn-primary" href="mostrar-cuenta.jsp" role="button">MOSTRAR CUENTA</a>
     

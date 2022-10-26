@@ -4,24 +4,36 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>ListaClienteServlet</servlet-name>
-  	<display-name>ListaClienteServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.curso.banco.web.ListaClienteServlet</servlet-class>
-  </servlet>
+  
   <servlet>
   	<servlet-name>MostrarCuentaServlet</servlet-name>
   	<display-name>MostrarCuentaServlet</display-name>
   	<description></description>
   	<servlet-class>com.curso.banco.web.MostrarCuentaServlet</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>ListaClienteServlet</servlet-name>
-  	<url-pattern>/listaClienteServlet</url-pattern>
-  </servlet-mapping>
+  <servlet>
+  	<servlet-name>PruebaServlet</servlet-name>
+  	<display-name>PruebaServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.curso.banco.web.PruebaServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListaClientesServlet</servlet-name>
+  	<display-name>ListaClientesServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.curso.banco.web.ListaClientesServlet</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>MostrarCuentaServlet</servlet-name>
   	<url-pattern>/mostrarCuentaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PruebaServlet</servlet-name>
+  	<url-pattern>/PruebaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListaClientesServlet</servlet-name>
+  	<url-pattern>/ListaClientesServlet</url-pattern>
   </servlet-mapping>
 </web-app>

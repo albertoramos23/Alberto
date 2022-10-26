@@ -10,11 +10,14 @@ public class Customer implements Serializable{
 
 	  private String lastName;
 
+	  private int idCustomer;
 	  private Account[] accounts;
 	  private int numberOfAccounts;
 
-	  public Customer(String f, String l) {
-	    firstName = f;
+	  public Customer( int id ,String f, String l) {
+	    
+		idCustomer = id;
+		firstName = f;
 	    lastName = l;
 	    // initialize accounts array
 	    accounts = new Account[10];
@@ -42,6 +45,14 @@ public class Customer implements Serializable{
 	    return accounts[account_index];
 	  }
 
+	  public int getIdCustomer() {
+		return idCustomer;
+	}
+	  
+	  public void setIdCustomer(int idCustomer) {
+		this.idCustomer = idCustomer;
+	}
+	  
 	@Override
 	public int hashCode() {
 		final int prime = 31;
