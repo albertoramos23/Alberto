@@ -8,11 +8,11 @@ public class Bank {
 	    customers = new Customer[10];
 	    numberOfCustomers = 0;
 	  
-	  Bank.addCustomer("jane", "Simms");
+	  Bank.addCustomer(6,"jane", "Simms");
 	  Customer customer = Bank.getCustomer(0);
 	  customer.addAccount(new SavingsAccount(500.00,0.05));
 	  customer.addAccount(new CheckingAccount(200.00,500.00));
-	  Bank.addCustomer("Owen", "Bryant");
+	  Bank.addCustomer(5,"Owen", "Bryant");
 	  customer = Bank.getCustomer(1);
 	  customer.addAccount(new SavingsAccount(200.00,0.03));
 	  
@@ -22,9 +22,9 @@ public class Bank {
 	    // this constructor should never be called
 	  }
 
-	  public static void addCustomer(String f, String l) {
+	  public static void addCustomer(int id,String f, String l) {
 	    int i = numberOfCustomers++;
-	    customers[i] = new Customer(f, l);
+	    customers[i] = new Customer(id,f, l);
 	  }
 	  public static int getNumOfCustomers() {
 	    return numberOfCustomers;

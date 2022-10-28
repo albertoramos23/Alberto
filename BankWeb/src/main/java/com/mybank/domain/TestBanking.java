@@ -5,10 +5,10 @@ public class TestBanking {
     public static void main(String[] args) {
         
         
-        Bank.addCustomer("Jane", "Simms");
-        Bank.addCustomer("Owen", "Bryant");
-        Bank.addCustomer("Tim", "Soley");
-        Bank.addCustomer("Maria", "Soley");
+        Bank.addCustomer(1,"Jane", "Simms");
+        Bank.addCustomer(2,"Owen", "Bryant");
+        Bank.addCustomer(3,"Tim", "Soley");
+        Bank.addCustomer(4,"Maria", "Soley");
         
         for ( int i = 0; i < Bank.getNumOfCustomers(); i++ ) {
             Customer customer = Bank.getCustomer(i);
